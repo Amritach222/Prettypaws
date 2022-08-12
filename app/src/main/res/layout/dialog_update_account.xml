@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Name"
+        android:textColor="#000"
+        android:textSize="@dimen/page_title"
+        />
+    <View
+        android:id="@+id/hr_line"
+        android:layout_below="@id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/dialog_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/body_text"
+        android:layout_below="@+id/hr_line"
+        />
+    <EditText
+        android:id="@+id/change_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_body"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/change_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="@dimen/button"
+            android:background="@color/mainColor"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textSize="@dimen/button"
+            android:background="@color/mainColor"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

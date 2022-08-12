@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/draw_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_accprof" />
+    <item android:id="@+id/add_dog"
+        android:title="Add Dog"
+        android:icon="@drawable/ic_add"/>
+    <item android:id="@+id/donation"
+        android:title="Donate"
+        android:icon="@drawable/ic_donate"/>
+        <item android:id="@+id/find_veterinary"
+            android:title="Find Veterinary "
+            android:icon="@drawable/ic_search"/>
+    </group>
+    <item android:title="Communicate" android:checkable="false"/>
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/question_and_suggestion"
+        android:title="Questions and Suggestions"
+        android:icon="@drawable/ic_message"/>
+    <item android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_share"/>
+    <item android:id="@+id/rate"
+        android:title="Rate"
+        android:icon="@drawable/ic_star"/>
+    </group>
+
+
+</menu>

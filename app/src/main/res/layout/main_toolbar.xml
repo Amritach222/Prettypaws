@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    tools:context=".ExploreActivity">
+    <ImageView
+        android:id="@+id/ic_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ClickMenu"
+        android:src="@drawable/ic_menu"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:text="Pretty Paws"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack" />
+    <ImageButton
+        android:id="@+id/account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account"
+        android:background="#00000000"/>
+
+
+</LinearLayout>

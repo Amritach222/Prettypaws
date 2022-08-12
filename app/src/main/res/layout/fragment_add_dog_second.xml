@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddDogActivity"
+    android:background="@color/background_color">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: * means Compulsory"
+        android:textSize="@dimen/modal_text"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_for_field"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dog_name_ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's your dog name ?"
+        android:textSize="@dimen/font_size_dog_add"
+        android:textColor="#000"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edit_text"
+            android:padding="3dp">
+        <EditText
+            android:id="@+id/dog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/ask_dog_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_dog_add_form"
+                android:text="Enter age of dog"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_dog_add" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edit_text"
+            android:padding="3dp">
+        <EditText
+            android:id="@+id/dog_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_dog_add_form"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ask_dog_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose gender"
+            android:textSize="@dimen/font_size_dog_add"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textColor="#FD0404"
+            android:textSize="@dimen/font_size_dog_add"/>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:text="Male"
+                android:background="@drawable/border_edit_text"
+                android:textSize="@dimen/font_size_dog_add" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="@dimen/font_size_dog_add"
+                android:text="Female"
+                android:padding="10dp"
+                android:background="@drawable/border_edit_text"
+                android:layout_marginLeft="60dp"
+                tools:ignore="OnClick" />
+
+            
+        </RadioGroup>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_dog_add_form"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ask_dog_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a picture"
+            android:textSize="@dimen/font_size_dog_add"
+            android:textColor="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:textColor="#FD0404"
+                android:textSize="@dimen/font_size_dog_add"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_for_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/button"
+            />
+       <ImageView
+           android:id="@+id/dog_image"
+           android:layout_marginTop="10dp"
+           android:layout_width="200dp"
+           android:layout_height="150dp"
+           android:layout_gravity="center"
+           android:scaleType="centerCrop"
+           />
+
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainColor"
+        android:layout_gravity="end|bottom"
+        android:clickable="true"
+        android:onClick="clickFAB2"
+        android:src="@drawable/ic_right_arrow"
+        android:contentDescription="@string/submit"
+        android:layout_margin="16dp"
+        tools:ignore="OnClick" />
+</FrameLayout>

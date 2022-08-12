@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background_color"
+    tools:context=".DonationActivity">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/donate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount you want to donate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/page_title"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_below="@+id/donate_text"
+        android:drawableLeft="@drawable/ic_dolor"
+        android:background="@drawable/rounded_corners" />
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate with Esewa"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_button"
+        android:textColor="@color/colorWhite"
+        android:background="#0CC61F"/>
+
+</RelativeLayout>

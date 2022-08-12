@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286757095781",
+    "project_id": "prettypaws-8c9a2",
+    "storage_bucket": "prettypaws-8c9a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286757095781:android:4f50367b5048455f8b398c",
+        "android_client_info": {
+          "package_name": "com.codewithamrit.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286757095781-beof40l6ju3eek03bmul82hmsfd1450a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBisxJHiUrzo9r9NETFpwgfr8QtSGkRN0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286757095781-beof40l6ju3eek03bmul82hmsfd1450a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
