@@ -1,0 +1,209 @@
+*
+{
+ margin: 0;   
+ padding:0;
+ box-sizing: border-box;
+ list-style: none;
+ text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Raleway', sans-serif;
+}
+
+p,a{
+    font-family: 'Roboto', sans-serif
+}
+
+.container
+{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clear
+{
+    clear:both;
+}
+
+/* 1. side bar css */
+section#sidebar
+{
+    width: 20%;
+    background: red;
+    position:fixed;
+    top:0px;
+    left:0px;
+    color:white;
+    height: 100%;
+    background: linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+}
+/* 2. main-content css */
+ section#maincontent
+{
+    width: 80%;
+    float: right;
+    /* background: linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));; */
+    color:white;
+} 
+
+/* 3. sidebar-logo css */
+.sidebar-logo
+{
+    padding: 15px 30px;
+    padding-bottom: 100px;
+}
+.sidebar-logo span{
+    padding-left: 7.5px;
+}
+
+/* 4.sidebar-logo menu css */
+
+.sidebar-menu ul li a{
+    display: block;
+    padding: 20px 40px;
+    color: white;
+}
+
+.sidebar-menu li:hover{
+    background: linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+}
+
+.sidebar-menu ul li span
+{
+    padding-left: 10px;
+}
+
+/* 5.main-content header css */
+.main-header
+{
+ /* position: fixed; */
+ background: linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+  box-shadow:10px 10px 10px rgba(111, 114, 113, 0.466);
+  /* width: 100%; */
+  display: flex;
+  padding: 15px;
+}
+.main-header #part2
+{
+  margin:0px auto;
+}
+
+.main-header #part3 {
+    margin-right: 6px;
+}
+
+.search-bar
+{
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  padding: 4px 10px;
+}
+
+.search-bar:focus{
+    border: 2px solid rgb(228, 229, 235);
+}
+.header-part i{
+    cursor: pointer;
+}
+
+/* 6. Footer css */
+.main-footer
+    {
+    
+     background: linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+      box-shadow:10px 10px 10px rgba(111, 114, 113, 0.466);
+      width: 100%;
+      display: flex;
+      padding: 15px;
+      position: absolute;
+      bottom: 0px;
+    }
+
+.main-footer a{
+ padding: 10px 10px;
+ color: white;
+}
+
+.main-footer .footer-3 p
+{
+    margin-left:200px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: slategray;
+
+}
+
+.main-footer a:hover
+{
+    color: slategray;
+}
+
+/* 7.main-body css */
+.main-body
+{
+    background: black;
+   /* height: 608px; */
+   padding: 10px;
+   display: flex;
+}
+ /* 8.Dog and other details css */
+
+.other-details
+{
+    background:linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+    height: 590px;
+    border-radius: 28px;
+    width:25%;
+    /* overflow-y: scroll; */
+      /* display: none; */
+}
+.other-details h2{
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+
+.dog-details
+{
+    background:linear-gradient(rgb(42, 27, 95),rgb(51, 57, 88));
+    height: 590px;
+    border-radius: 28px;
+    width:80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.dog-details .demo-dog
+{
+    background:white;
+    height: 47.5%;
+    border-radius: 28px;
+    width:33%;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    color:black;
+    box-shadow:10px 10px 10px rgba(111, 114, 113, 0.466);
+}
+.demo-dog-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* float:left; */
+}
+
+.demo-dog-details p
+{
+padding: 6px;
+}
+.demo-dog-details img
+{
+padding: 10px;
+}

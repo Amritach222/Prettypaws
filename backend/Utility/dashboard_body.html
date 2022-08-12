@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ul class="list-group">
+        <li onclick="openNextPage('manageuser.php');" class="list-group-item list"><img src="https://img.icons8.com/color/48/000000/folder-invoices--v2.png" />&ensp;View Users</li>
+        <li onclick="openNextPage('approved_detail.php');" class="list-group-item list"><img src="https://img.icons8.com/color/48/000000/folder-invoices--v2.png" />&ensp;Approved Dogs</li>
+        <li onclick="openNextPage('vetinfo.php');" class="list-group-item list"><img src="https://img.icons8.com/color/48/000000/folder-invoices--v2.png" />&ensp;Veterinarian Information</li>
+        <li onclick="openNextPage('adopting_dogs.php');" class="list-group-item list"><img src="https://img.icons8.com/color/48/000000/folder-invoices--v2.png" />&ensp;Adopting Dogs</li>
+    </ul>
+    <script type="text/javascript">
+        function openNextPage(url) {
+            window.location.replace("https://localhost/dogFinderApp/Utility/" + url);
+        }
+    </script>
+    <style>
+        li {
+            cursor: pointer;
+        }
+        
+        li:hover {
+            background-color: rgb(183, 189, 187);
+        }
+    </style>
+</body>
+
+</html>
